@@ -51,6 +51,8 @@ dependencies:
   equatable: ^2.0.5
   sizer: ^2.0.15
   asuka: ^2.0.2
+  dartz: ^0.10.1
+
 
 dev_dependencies:
   flutter_test:

@@ -1,6 +1,7 @@
 import 'package:asuka/asuka.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
+import 'package:orderapp/core/util/app_theme.dart';
 import 'package:sizer/sizer.dart';
 
 class AppWidget extends StatelessWidget {
@@ -13,14 +14,7 @@ class AppWidget extends StatelessWidget {
         return MaterialApp.router(
           builder: Asuka.builder,
           debugShowCheckedModeBanner: false,
-          theme: ThemeData(
-            useMaterial3: true,
-            primaryColor: Colors.blue,
-            textSelectionTheme: const TextSelectionThemeData(
-              cursorColor: Colors.blue,
-            ),
-            
-          ),
+          theme: lightTheme,
           title: "Order App",
           routeInformationParser: Modular.routeInformationParser,
           routerDelegate: Modular.routerDelegate,
